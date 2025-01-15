@@ -1,0 +1,90 @@
+.ok{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation: kuq 5s infinite;
+}
+@keyframes kuq{
+    from{
+      top: 0px;
+      left: 0px;
+    }
+    to{
+      top: 200px;
+      left: 200px;
+    }
+}
+.ok1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation: zi 5s infinite;
+   
+}
+@keyframes zi{
+      0%{top: 0px;}
+      25%{top: 200px;width: 250px;background-color: blue;}
+      75%{top: 50px;width: 300px;background-color: black;}
+      100%{top: 100px;width: 350px;background-color: aqua;}
+}
+.ok2{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation: detyr 5s infinite;
+}
+@keyframes detyr{
+    0%{top: 0px; left: 0px;}
+    25%{top: 0px; left: 100px;}
+    50%{top: 200px;left: 100px;}
+    75%{top: 200px;left: 0px;}
+    100%{top: 0px;left: 0px;}
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #00b894;
+  }
+  
+  .road {
+    margin: 0 auto;
+    height: 100vh;
+    width: 600px;
+    background-color: #636e72;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bars {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bars div {
+    height: 50px;
+    width: 15px;
+    background-color: white;
+    margin-bottom: 50px;
+  }
+  
+  .car {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: drive 5s infinite;
+  }
+  @keyframes drive{
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: 1000px;
+    }
+  }
